@@ -1,0 +1,15 @@
+.icon_body{
+    background-color: #212432;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    color:white;
+}
+.icon{
+  width: 100px;
+  height: 100px;
+}
+.icon_link{
+  text-decoration: none;
+}

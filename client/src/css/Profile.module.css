@@ -1,0 +1,143 @@
+.navbar{
+    background-color: rgb(86, 86, 86);
+    color: white;
+  }
+  .text{
+    color: white;
+    text-decoration-color: white;
+  }
+  .dropdown{
+    float: right;
+    position: absolute;
+    right: 0px;
+  }
+  /* .navbarWatchlist{
+    color: white;
+    position: absolute;
+    right: 28%;
+  }
+  .navbarProfile{
+    color:white;
+    position: absolute;
+    right: 20%;
+  }
+  .navbarSearch{
+    width: 600px;
+    margin-left: 1%;
+  }
+  .navbarMenu{
+    margin-left: 13%;
+  } */
+  .button{
+    /* background: -webkit-linear-gradient(#ad5389,#3c1053); */
+    background: linear-gradient(135deg,#29323C,#2B5876,#4E4376);
+    color: white;
+    border: none;
+    margin-right: 3%;
+    width: 100px;
+  }
+  .button:hover{
+    /* background: -webkit-linear-gradient(#ad5389,#3c1053); */
+    background: linear-gradient(135deg,#29323C,#2B5876,#4E4376);
+    border: none;
+    color: white;
+  }
+  .figureImage{
+    border-radius: 20px;
+    margin-bottom: 3%;
+    margin-top: 20%;
+  }
+  .figureCaption{
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+  }
+  .body{
+    background-color: #0C0717;
+    color: white;
+    width: 100%;
+    height: 100vh;
+  }
+  .textArea{
+    width: 50%;
+    height: 1000px;
+    background-color: white;
+    color: #20252b;
+    border: none;
+    border-radius: 20px;
+    margin-top: 2%;
+    position: absolute;
+    
+    
+  }
+  .content{
+    color: 'white';
+    background-color: #0C0717;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 500px;
+    
+  }
+  @media only screen and (max-width: 600px) {
+    .textArea{
+      width: 50%;
+      height: 1000px;
+      background-color: white;
+      color: #20252b;
+      border: none;
+      border-radius: 20px;
+      margin-top: 2%;
+      position: absolute;
+      
+      
+    }
+  }
+  hr{
+    margin-top: 2%;
+  }
+  .card{
+    margin-top: 2%;
+  }
+  .password{
+    /* background: linear-gradient(#ad5389,#3c1053); */
+    background: linear-gradient(135deg,#29323C,#2B5876,#4E4376);
+    border:0;
+     color: white;
+  }
+  .about{
+    margin-top: 10%;
+    /* background: linear-gradient(#ad5389,#3c1053); */
+    background: linear-gradient(135deg,#29323C,#2B5876,#4E4376);
+    border:0;
+     color: white;
+  }
+  .scroll{
+    overflow-y: scroll;
+    height: 500;
+  }
+  .scrollElement {
+    scrollbar-color: red yellow;
+    overflow-y: scroll;
+    height: 500;
+  }
+  .customScroll {
+    overflow-y: scroll;
+    height: 500px;
+    border-radius: 13px;
+  }
+  .customScroll::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 13px;
+  }
+  
+  .customScroll::-webkit-scrollbar-track {
+    background:  #20252b;
+    border-radius: 13px;
+  
+  }
+  
+  .customScroll::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 13px;   
+  }
+  

@@ -1,0 +1,97 @@
+.movie_card {
+    margin-top: 10%;
+}
+
+.movie_card_body {
+    width: 200px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #212432;
+    /* #6C72C7 
+    2F3148
+    */
+}
+
+.movie_card_image {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-size: contain;
+    border: 0.5px solid white;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+
+.button {
+    /* background: linear-gradient(#8BC6EC,#9599E2); /
+     border:0;
+     / background: linear-gradient(135deg,#65799B,#5E2563);
+     background: linear-gradient(135deg,#EB121A,#FAEB18);
+     background: linear-gradient(135deg,#FAD961,#F76B1C);  /
+     background: linear-gradient(135deg,#29323C,#2B5876,#4E4376);
+     / background: linear-gradient(135deg,#77A1D3,#79CBCA); /
+     / background: linear-gradient(135deg,#FCDF8A,#F38381); /
+     / background: linear-gradient(135deg,#79CBCA,#E684AE); /
+     / background: #0067AC;*/
+}
+
+.movie_card_inner_body {
+    color: white;
+    min-height: 110px;
+    max-height: 110px;
+}
+
+.title {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.imdb {
+    font-size: 15px;
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+    font-weight: lighter;
+    padding-top: 2px;
+}
+
+.up_body {
+    min-height: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    color: gold;
+    font-size: 20px;
+}
+
+.detailicon {
+    color: #A2C5FE;
+    font-size: 25px;
+}
+
+.youtubeicon {
+    color: #A2C5FE;
+    font-size: 22px;
+}
+
+.watchlisticon{
+    color: #A2C5FE;
+    font-size: 25px;
+}
+
+.watchlisticon:hover{
+    color: #AE8CFA;
+}
+
+.detailicon:hover {
+    color: #AE8CFA;
+}
+
+.youtubeicon:hover {
+    color: #AE8CFA;
+}
