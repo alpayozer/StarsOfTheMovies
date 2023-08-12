@@ -5,7 +5,7 @@ export const createMovie = async (request, response) => {
     const movie = await new Movie(request.body);
     movie.save();
 
-    response.status(200).json("Movie saved successfully");
+    response.status(200).json(movie);
   } catch (error) {
     response.status(500).json(error);
   }
@@ -21,7 +21,7 @@ export const updateMovie = async (request, response) => {
 
     await Movie.findByIdAndUpdate(request.params.id, { $set: request.body });
 
-    response.status(200).json("Movie updated successfully");
+    response.status(200).json(movie);
   } catch (error) {
     response.status(500).json(error);
   }

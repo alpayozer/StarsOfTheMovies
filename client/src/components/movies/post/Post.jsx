@@ -101,7 +101,7 @@ const Post = ({ post }) => {
                             <Col md={1}>
                                 <BsStarFill className={styles.icon} />
                             </Col>
-                            <Col md={4}><Card.Text className={styles.imdb}>20</Card.Text></Col>
+                            <Col md={4}><Card.Text className={styles.imdb}>5</Card.Text></Col>
                         </Row>
                         <Card.Title className={styles.title}>{post.title}</Card.Title>
                     </Card.Body>

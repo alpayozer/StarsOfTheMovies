@@ -7,7 +7,7 @@ export const newRate = async (request, response) => {
         const rate = await new Rate(request.body);
         rate.save();
 
-        response.status(200).json('Rate saved successfully');
+        response.status(200).json(rate +'Rate saved successfully');
     } catch (error) {
         response.status(500).json(error);
     }

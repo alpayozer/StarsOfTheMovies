@@ -5,7 +5,7 @@ export const langs = {
         //signin
         giris: 'Haydi aramıza katıl !',
         isimAlanı: 'İsminizi giriniz',
-        soyisimAlanı: 'Soy isminizi giriniz',
+        soyisimAlanı: 'Şifrenizi giriniz',
         girisButonu: 'Giriş Yap',
         yada:'ya da',
         kayıtOl: 'Kayıt ol',
@@ -86,7 +86,7 @@ export const langs = {
         //signin
         giris: "Let's Join Us !",
         isimAlanı: 'Please enter your name',
-        soyisimAlanı: 'Please enter your last name',
+        soyisimAlanı: 'Please enter your password',
         girisButonu: 'Log in',
         yada:'or',
         kayıtOl: 'Sign Up',
