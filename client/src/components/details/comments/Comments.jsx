@@ -75,7 +75,7 @@ const Comments = ({ movie }) => {
                 <Image src={url} alt="dp" />   
                 <StyledTextArea 
                     rowsMin={5} 
-                    placeholder={ML('yorumMetni')}
+                    placeholder="Film hakkında yorum yapabilirsiniz."
                     onChange={(e) => handleChange(e)} 
                     value={comment.comments}
                 />

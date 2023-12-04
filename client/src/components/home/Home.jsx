@@ -77,13 +77,13 @@ const Home = () => {
                       style={{ display: "flex" }}
                     >
                       <Col xs={2} sm={2} md={4} xl={4}>
-                        <IconCard title={ML('korku')} image={korku} />
+                        <IconCard title="Korku" image={korku} />
                       </Col>
                       <Col xs={2} sm={2} md={4} xl={4}>
-                        <IconCard title={ML('aksiyon')} image={aksiyon} />
+                        <IconCard title="Aksiyon" image={aksiyon} />
                       </Col>
                       <Col xs={2} sm={2} md={4} xl={4}>
-                        <IconCard title={ML('komedi')} image={komedi} />
+                        <IconCard title="Komedi" image={komedi} />
                       </Col>
                     </Space>
                   </Row>
@@ -94,13 +94,13 @@ const Home = () => {
                       style={{ display: "flex" }}
                     >
                       <Col xs={2} sm={2} md={4} xl={4}>
-                        <IconCard title={ML('gerilim')} image={gerilim} />
+                        <IconCard title="Gerilim" image={gerilim} />
                       </Col>
                       <Col xs={2} sm={2} md={4} xl={4}>
-                        <IconCard title={ML('romantik')} image={romantik} />
+                        <IconCard title="Romantik" image={romantik} />
                       </Col>
                       <Col xs={2} sm={2} md={4} xl={4}>
-                        <IconCard title={ML('bilimKurgu')} image={bilimKurgu} />
+                        <IconCard title="Bilim Kurgu" image={bilimKurgu} />
                       </Col>
                     </Space>
                   </Row>

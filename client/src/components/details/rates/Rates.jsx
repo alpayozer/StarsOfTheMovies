@@ -75,7 +75,7 @@ const Rates = ({ movie }) => {
             }
             {/* <RatePage rate={rateSum} length={rates.length}/> */}
             {/* <div>ORTALAMA{rateSum = rateSum / rates.length}</div> */}
-            <Col md={3}><Tag color="geekblue">{rateSum = rateSum / rates.length}</Tag></Col>
+            <Col md={3}><Tag color="geekblue">{(rateSum = rateSum / rates.length).toFixed(1)}</Tag></Col>
         </Row>
             
             

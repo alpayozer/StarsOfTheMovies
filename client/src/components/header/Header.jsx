@@ -143,9 +143,9 @@ const Header = () => {
                                     <NavDropdown.Item onClick={() => navigate("/login")}>{ML('cikisYap')}</NavDropdown.Item>
                                 </NavDropdown>}
                                 
-                            <div>
+                            {/* <div>
                             <Language />
-                            </div>
+                            </div> */}
                                 {/* <NavDropdown
                                     //</Nav>title={<img src={bmo} width={30} height={30} />}>
                                     //<NavDropdown.Item onClick={() => {

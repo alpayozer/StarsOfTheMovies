@@ -108,8 +108,6 @@ const CreatePost = () => {
                     <Container>
                         <Image src={url} alt="post" />
                     </Container>
-
-
                 </Col>
                 <Col span={12}>
                     <Container>
@@ -151,7 +149,9 @@ const CreatePost = () => {
                                 <Input name='description' onChange={(e) => handleChange(e)} placeholder='Film açıklaması' />
                             </Row>
                             
-                            <Button style={{ marginTop: "1%", backgroundColor: "#FA9503", color: "white", textDecoration: "none", border: "none" , height:"4vh"}} onClick={() => saveMovie()} variant="contained" color="primary"> {<img style={{marginRight:"1%"}} src={smurf} width={30} height={30}/>}Filmi yükle</Button>
+                            <Button style={{ marginTop: "1%", backgroundColor: "#FA9503", color: "white", textDecoration: "none", border: "none" , height:"4vh"}} 
+                            onClick={() => saveMovie()} variant="contained" color="primary"> {<img style={{marginRight:"1%"}} src={smurf} width={30} height={30}/>}
+                            Filmi yükle</Button>
                         </StyledFormControl>
                     </Container>
                 </Col>

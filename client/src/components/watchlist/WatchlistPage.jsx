@@ -24,7 +24,7 @@ const WatchlistPage = () => {
 
     return (
         <Container style={{minHeight:"100vh"}}>
-            <h1>{account.name} adlı kullanıcın izleme listesi</h1>
+            <h1 style={{color:"white",textAlign:"center",fontSize:"35px",marginTop:"3%",marginBottom:"3%"}}>{account.name} adlı kullanıcın izleme listesi</h1>
             <Grid container item xs={12} sm={12} md={12} lg={12}>
                 {watchlists.map(watchlist => {
                     return (

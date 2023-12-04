@@ -85,7 +85,7 @@ const DetailView = () => {
         setWatchlist({ ...watchlist, userId: account.name, movieId: id })
     }, []);
 
-    const deleteBlog = async () => {
+    const deleteMovie = async () => {
         await API.deletePost(movie._id);
         navigate('/')
     }
@@ -125,7 +125,6 @@ const DetailView = () => {
     return (
         <Container style={{ minHeight: "100vh" }}>
             <div className={styles.glass}>
-                {/* style={{ backgroundImage: `url(${movie.picture})` }} */}
                 <Row className={styles.row}>
                     <Col md={4}>
                         <img style={{ width: 350, height: 500, borderRadius: 40, margin: 30, marginBottom: 0 }} src={movie.picture || url} />
@@ -143,7 +142,7 @@ const DetailView = () => {
                                             account.username === "admin" &&
                                             <>
                                                 <Link to={`/movies/update/${movie._id}`}><EditIcon color="primary" /></Link>
-                                                <DeleteIcon onClick={() => deleteBlog()} color="error" />
+                                                <DeleteIcon onClick={() => deleteMovie()} color="error" />
                                             </>
                                         }
                                     </Box>
@@ -155,11 +154,7 @@ const DetailView = () => {
                                 <Col md={1}><Tooltip title={ML('puan')}><Rates movie={movie} /></Tooltip></Col>
                                 <Col md={1}>
                                     <Tooltip title={ML('fragman')}>
-
                                         <MdOutlineNotStarted onClick={() => setModalShow(true)} size={25} color='white' />
-                                        {/* <Modal  width={700} centered title="Basic Modal" open={isModalOpen}>
-                                        <iframe width="600" height="350" src="https://www.youtube.com/embed/qEVUtrk8_B4" title="John Wick: Chapter 4 (2023 Movie) Official Trailer – Keanu Reeves, Donnie Yen, Bill Skarsgård" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                        </Modal> */}
                                         <MyVerticallyCenteredModal
                                             show={modalShow}
                                             onHide={() => setModalShow(false)}

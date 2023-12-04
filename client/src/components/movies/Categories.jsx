@@ -34,7 +34,7 @@ const Categories = () => {
 
                     <Col style={{  maxWidth: "90px", height: "30px", textAlign: "center", borderRadius: "3px",borderStyle:"dashed", borderColor:"white" , stroke:"white"}}>
                         <Link style={{ color: "white", textDecoration: "none" }} to={"/movies"}>
-                            All</Link>
+                            Tüm</Link>
                     </Col>
                     {categories.map(category => (
                         <Col style={{  maxWidth: "90px", height: "30px", textAlign: "center", borderRadius: "10px" , borderRadius: "3px",borderStyle:"dashed", borderColor:"white"}}>

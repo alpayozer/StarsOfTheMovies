@@ -139,7 +139,7 @@ const Login = ({ isUserAuthenticated }) => {
                     <Wrapper>
                         <h1 className={styles.title}>{ML('giris')}</h1>
                             <TextField style={{backgroundColor:"white",borderRadius:"2px",boxShadow:"0px 0px 20px white"}} variant="standard" value={login.username} onChange={(e) => onValueChange(e)} name='username' label={ML('isimAlanı')} />
-                            <TextField style={{backgroundColor:"white",borderRadius:"2px",boxShadow:"0px 0px 20px white"}} variant="standard" value={login.password} onChange={(e) => onValueChange(e)} name='password' label={ML('soyisimAlanı')} />
+                            <TextField type='password' style={{backgroundColor:"white",borderRadius:"2px",boxShadow:"0px 0px 20px white"}} variant="standard" value={login.password} onChange={(e) => onValueChange(e)} name='password' label={ML('soyisimAlanı')} />
 
                             {error && <Error>{error}</Error>}
 
@@ -149,14 +149,13 @@ const Login = ({ isUserAuthenticated }) => {
                         </Wrapper> :
                         <Wrapper>
                         <h1 className={styles.title}>Kayıt Ol</h1>
+                            <TextField style={{backgroundColor:"white",borderRadius:"2px",boxShadow:"0px 0px 20px white"}} variant="standard" value={signup.name} onChange={(e) => onInputChange(e)} name='name' label='İsim giriniz' />
+                            <TextField style={{backgroundColor:"white",borderRadius:"2px",boxShadow:"0px 0px 20px white"}} variant="standard" value={signup.username} onChange={(e) => onInputChange(e)} name='username' label='Kullanıcı adı giriniz' />
+                            <TextField type='password' style={{backgroundColor:"white",borderRadius:"2px",boxShadow:"0px 0px 20px white"}} value={signup.password} variant="standard" onChange={(e) => onInputChange(e)} name='password' label='Şifre giriniz' />
 
-                            <TextField variant="standard" onChange={(e) => onInputChange(e)} name='name' label='Enter Name' />
-                            <TextField variant="standard" onChange={(e) => onInputChange(e)} name='username' label='Enter Username' />
-                            <TextField variant="standard" onChange={(e) => onInputChange(e)} name='password' label='Enter Password' />
-
-                            <SignupButton onClick={() => signupUser()} >Signup</SignupButton>
+                            <SignupButton onClick={() => signupUser()} >Kayıt Ol</SignupButton>
                             <Text style={{ textAlign: 'center' }}>OR</Text>
-                            <LoginButton variant="contained" onClick={() => toggleSignup()}>Already have an account</LoginButton>
+                            <LoginButton variant="contained" onClick={() => toggleSignup()}>Zaten bir hesabım var</LoginButton>
                         </Wrapper>
                 }
             </Box>
